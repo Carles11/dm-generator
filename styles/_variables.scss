@@ -1,0 +1,18 @@
+/* variables.module.scss */
+$primary-color: #f4ac45;
+$secondary-color: #0b3c49;
+$terciary-color: #688e26;
+
+$theme-colors: (
+  'success': #28a745,
+  'info': #17a2b8,
+  'warning': #ffc107,
+  'error': tomato,
+);
+
+// :export {
+//   mainColor: $primary-color;
+//   secondColor: $secondary-color;
+//   thirdColor: $terciary-color;
+//   themeColors: $theme-colors;
+// }

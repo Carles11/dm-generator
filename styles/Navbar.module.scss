@@ -1,18 +1,23 @@
+@use 'variables';
+
 .navHeader {
-  background-color: red;
+  background-color: variables.$secondary-color;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: variables.$primary-color;
   h1 {
     font-size: xx-large;
+    padding: 2rem;
   }
   ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    padding: 2rem;
     li {
-      padding: 1rem;
+      padding: 0.5rem;
     }
   }
 }
