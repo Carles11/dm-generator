@@ -1,6 +1,10 @@
 /* variables.module.scss */
 $primary-color: #64ff00;
+$font-header: MontserratSemibold;
+$font-paragraph: LatoLight;
 
 :export {
   primaryColor: $primary-color;
+  headerFont: $font-header;
+  paragraphFont: $font-paragraph;
 }
