@@ -1,3 +1,3 @@
-export default function NestedLayout() {
-  return <div className="global-margin">NestedLayout</div>
+export default function NestedLayout({ children }) {
+  return <div className="global-margin">{children}</div>
 }
