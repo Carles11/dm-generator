@@ -17,12 +17,11 @@ const Prices = () => {
     return (
       <div className={styles.cardBilling}>
         <p>
-          <strong className={styles.price}>$ {price}</strong>
-          <strong> / mo.</strong>
+          <strong className={styles.price}>€ {price}</strong>
         </p>
         <p>
           <span className={styles.recurrency}>
-            Billed Anually or $ {recurrency}/monthly
+            Billed monthly or $ {recurrency}/anually
           </span>
         </p>
       </div>
@@ -96,32 +95,32 @@ const cardsData = [
     type: 'free',
     title: 'Free Plan',
     description: 'Create for web',
-    price: 0,
     recurrency: 0,
+    price: 0,
     mostPopular: false,
-    data: ['Unlimited conversions', 'Only for web'],
+    data: ['Unlimited conversions', '1 Account', 'Only for web'],
   },
   {
     id: 2,
     type: 'basic',
     title: 'Basic Plan',
     description: 'Small media Web and Print',
-    price: 29.99,
-    recurrency: 24.99,
+    recurrency: 1349.99,
+    price: 129.99,
     mostPopular: false,
-    data: ['All from free plan', '1 conversion / mo.', '3 Accounts'],
+    data: ['All from free plan', '1 print conversion / mo.', '1 Account'],
   },
   {
     id: 3,
     type: 'medium',
     title: 'Medium Plan',
     description: 'Medium media Web and Print',
-    price: 69.99,
-    recurrency: 59.99,
+    recurrency: 3999.99,
+    price: 474.99,
     mostPopular: true,
     data: [
       'All from Basic plan',
-      '5 conversion / mo.',
+      '5 print conversions / mo.',
       '6 Accounts',
       '24/7 Support',
     ],
@@ -131,12 +130,12 @@ const cardsData = [
     type: 'pro',
     title: 'Pro Plan',
     description: 'Big media Web and Print',
-    price: 99.99,
-    recurrency: 84.99,
+    recurrency: 6999.99,
+    price: 724.99,
     mostPopular: false,
     data: [
       'All from Medium plan',
-      'Unlimited conversions',
+      'Unlimited print conversions',
       'Unlimited Accounts',
       '24/7 Support',
     ],
