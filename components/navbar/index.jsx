@@ -5,7 +5,10 @@ import styles from 'styles/Navbar.module.scss'
 export default function Navbar() {
   return (
     <header className={styles.navHeader}>
-      <h1>Digital Media Generator</h1>
+      <Link href="/">
+        <h1>Digital Media Generator</h1>
+      </Link>
+
       <nav>
         <ul>
           <li>

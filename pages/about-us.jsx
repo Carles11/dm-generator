@@ -1,6 +1,9 @@
+import Layout from 'components/layout'
 
 export default function aboutUs() {
   return (
-    <div>aboutUs</div>
+    <Layout>
+      <p>aboutUs</p>
+    </Layout>
   )
 }
