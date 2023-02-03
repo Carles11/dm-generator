@@ -62,9 +62,11 @@ const Prices = () => {
     } = props
 
     return (
-      <div className={`card pricing-card ${type}`}>
+      <div className={`${styles.card} ${styles.pricingCard} ${styles[type]}`}>
         {mostPopular ? (
-          <span className={styles.card.mostPopular}>Most Popular</span>
+          <span className={`${styles.card} ${styles.mostPopular}`}>
+            Most Popular
+          </span>
         ) : null}
         <CardDescription title={title} description={description} />
         <CardBilling price={price} recurrency={recurrency} />
