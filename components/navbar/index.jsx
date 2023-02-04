@@ -23,6 +23,9 @@ export default function Navbar() {
           <li>
             <Link href="/pdf-generator">Generate PDFs</Link>
           </li>
+          <li>
+            <Link href="/auth">Log in / Sign up</Link>
+          </li>
         </ul>
       </nav>
     </header>
