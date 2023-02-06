@@ -1,0 +1,15 @@
+@use 'variables';
+
+.mainButtonContainer {
+  display: flex;
+  justify-content: center;
+  .mainButton {
+    background-color: variables.$secondary-color;
+    color: variables.$primary-color;
+    padding: 1rem;
+    margin: 2rem;
+    border-color: variables.$primary-color;
+    border-width: 2px;
+    border-radius: 15px 15px 15px 2px;
+  }
+}

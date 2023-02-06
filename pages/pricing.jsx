@@ -109,7 +109,7 @@ const cardsData = [
     type: 'basic',
     title: 'Basic Plan',
     description: 'Small media Web and Print',
-    recurrency: 699.99,
+    recurrency: 599.99,
     price: 59.99,
     mostPopular: false,
     data: [
@@ -124,8 +124,8 @@ const cardsData = [
     type: 'medium',
     title: 'Medium Plan',
     description: 'Medium media Web and Print',
-    recurrency: 4499.99,
-    price: 399.99,
+    recurrency: 2.999,
+    price: 299.99,
     mostPopular: true,
     data: [
       'All from Basic plan',
@@ -138,8 +138,8 @@ const cardsData = [
     type: 'pro',
     title: 'Pro Plan',
     description: 'Big media Web and Print',
-    recurrency: 7999.99,
-    price: 999.99,
+    recurrency: 4999.99,
+    price: 499.99,
     mostPopular: false,
     data: [
       'All from Medium plan',

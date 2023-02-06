@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <header className={styles.navHeader}>
       <Link href="/">
-        <h4>Digital Media Generator</h4>
+        <h4>Corporativo.design</h4>
       </Link>
 
       <nav>
