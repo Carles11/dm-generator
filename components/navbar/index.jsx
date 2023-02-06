@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <header className={styles.navHeader}>
       <Link href="/">
-        <h1>Digital Media Generator</h1>
+        <h4>Digital Media Generator</h4>
       </Link>
 
       <nav>
@@ -15,13 +15,13 @@ export default function Navbar() {
             <Link href="/about-us">About</Link>
           </li>
           <li>
-            <Link href="/prices">Prices</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/pricing">Pricing</Link>
           </li>
           <li>
             <Link href="/pdf-generator">Generate PDFs</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
           </li>
           <li>
             <Link href="/auth">Log in / Sign up</Link>

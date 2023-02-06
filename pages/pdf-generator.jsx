@@ -5,7 +5,7 @@ import React from 'react'
 export default function PdfGeneator() {
   return (
     <Layout>
-      <p>PdfGeneator</p>
+      <h1>PdfGeneator</h1>
       <PsPdfKitComponent />
     </Layout>
   )

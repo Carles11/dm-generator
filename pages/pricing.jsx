@@ -43,7 +43,7 @@ const Prices = () => {
   function CardAction({ clickMe }) {
     return (
       <div className={styles.cardAction}>
-        <button onClick={clickMe}>BUY NOW</button>
+        <button onClick={clickMe}>CONTACT SALES</button>
       </div>
     )
   }
@@ -80,6 +80,7 @@ const Prices = () => {
 
   return (
     <Layout>
+      <h1>Pricing</h1>
       <div className={styles.appWrapper}>
         {cardsData.map((props) => {
           return <PricingCard {...props} key={props.id} clickMe={handleClick} />
@@ -113,7 +114,9 @@ const cardsData = [
     mostPopular: false,
     data: [
       'All from free plan',
-      '1 flyer per month and 1 program per year print conversion',
+      '1 flyer per month and 1 program per year ready to print conversion',
+      'No adverts',
+      'Customer support within 24h.',
     ],
   },
   {
@@ -121,13 +124,13 @@ const cardsData = [
     type: 'medium',
     title: 'Medium Plan',
     description: 'Medium media Web and Print',
-    recurrency: 6999.99,
-    price: 599.99,
+    recurrency: 4499.99,
+    price: 399.99,
     mostPopular: true,
     data: [
       'All from Basic plan',
-      '6 flyer per month and 6 brochures per year to print conversions',
-      '24/7 Support',
+      '6 flyer per month and 6 brochures per year ready to print conversions',
+      'Priority customer support within 12h.',
     ],
   },
   {
@@ -135,13 +138,13 @@ const cardsData = [
     type: 'pro',
     title: 'Pro Plan',
     description: 'Big media Web and Print',
-    recurrency: 9999.99,
+    recurrency: 7999.99,
     price: 999.99,
     mostPopular: false,
     data: [
       'All from Medium plan',
-      'Unlimited print conversions, flyer or program',
-      '24/7 Support',
+      'Unlimited ready to print conversions, flyer or program',
+      'Dedicated customer support within 30min.',
     ],
   },
 ]
