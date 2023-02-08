@@ -1,4 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Image from 'next/image'
+
 import styles from 'styles/StepsCard.module.scss'
 
 const StepsCard = ({ title, iconName }) => {
@@ -6,7 +8,14 @@ const StepsCard = ({ title, iconName }) => {
   return (
     <div className={styles.stepsCardContainer}>
       <h3>{title}</h3>
-      <FontAwesomeIcon icon={iconName} />
+      {/* <FontAwesomeIcon icon={iconName} /> */}
+      <Image
+        src={iconName}
+        //   fill
+        width={100}
+        height="auto"
+        alt="corporativo logo"
+      />
     </div>
   )
 }
