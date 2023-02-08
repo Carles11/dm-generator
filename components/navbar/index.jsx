@@ -12,6 +12,7 @@ export default function Navbar() {
           //   fill
           width={100}
           height="auto"
+          alt="corporativo logo"
         />
       </Link>
 

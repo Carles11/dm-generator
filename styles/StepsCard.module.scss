@@ -1,0 +1,17 @@
+.stepsCardMainSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.stepsCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
+  width: 300px;
+  border: 2px solid #dfdcdc;
+  border-radius: 4px;
+  padding: 50px;
+  margin: 20px;
+}
