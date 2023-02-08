@@ -4,7 +4,7 @@ const Button = ({ txt }) => {
   return (
     <div className={styles.mainButtonContainer}>
       <button className={styles.mainButton}>
-        <h4>{txt}</h4>
+        <p>{txt}</p>
       </button>
     </div>
   )

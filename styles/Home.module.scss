@@ -1,0 +1,25 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .homeHeader {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .homeIntro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .homeImage {
+      margin: 4rem;
+      img {
+        border-radius: 33%;
+      }
+    }
+  }
+  .homeSection {
+    height: 60vh;
+  }
+}
