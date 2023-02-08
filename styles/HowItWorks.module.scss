@@ -1,0 +1,16 @@
+@use 'variables';
+
+.howItWorksTopSection {
+  background-color: variables.$secondary-light-color;
+  padding: 4rem;
+  h1 {
+    color: variables.$nav-items-color;
+  }
+}
+
+.howItWorksSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}

@@ -1,0 +1,16 @@
+.ssStyleFoldedcorner::before,
+.ssStyleFoldedcorner::after {
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.ssStyleFoldedcorner::before {
+  right: 0;
+  background-image: linear-gradient(-45deg, #3498db 50%, #37a2ea 50%);
+}
+
+.ssStyleFoldedcorner::after {
+  right: 100px;
+  background-image: linear-gradient(-45deg, #236fa1 50%, transparent 50%);
+}

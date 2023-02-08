@@ -1,19 +1,17 @@
-.stepsCardMainSection {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .stepsCardContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 250px;
-  width: 150px;
+  height: 300px;
+  width: 250px;
   border: 2px solid #dfdcdc;
   border-radius: 4px;
-  padding: 50px;
-  margin: 20px;
+  border-color: #787878;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: #dfdcdc;
+  h3 {
+    margin-bottom: 1rem;
+  }
 }

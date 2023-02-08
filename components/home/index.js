@@ -1,8 +1,10 @@
 import homeHeaderPic from 'assets/icons/Corporativo_logo.png'
 import Button from 'components/button'
+import Divider from 'components/divider'
 import Image from 'next/image'
 import styles from 'styles/Home.module.scss'
-import WhatWeDo from './whatWeDo'
+import HowItWorks from './howItWorks'
+
 const Home = () => {
   return (
     <div className={styles.homeContainer}>
@@ -16,6 +18,7 @@ const Home = () => {
           <Image
             src={homeHeaderPic}
             //   fill
+            priority={true}
             width={500}
             height="auto"
             alt="corporativo logo"
@@ -23,8 +26,9 @@ const Home = () => {
         </div>
       </header>
       <section className={styles.homeSection}>
-        <WhatWeDo />
+        <HowItWorks />
       </section>
+      <Divider />
     </div>
   )
 }

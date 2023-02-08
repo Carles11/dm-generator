@@ -5,11 +5,15 @@
   justify-content: center;
   .mainButton {
     background-color: variables.$secondary-color;
-    color: variables.$primary-color;
     padding: 1rem;
     margin: 2rem;
     border-color: variables.$primary-color;
     border-width: 1px;
     border-radius: 15px 15px 15px 2px;
+    p {
+      color: variables.$nav-items-color;
+      font-weight: bold;
+      font-size: large;
+    }
   }
 }

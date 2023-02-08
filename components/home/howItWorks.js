@@ -11,18 +11,18 @@ import Image from 'next/image'
 
 import StairsArrow from 'assets/icons/stairs.gif'
 import StepsCard from 'components/steps/card'
-import style from 'styles/StepsCard.module.scss'
+import style from 'styles/HowItWorks.module.scss'
 
 const stepsCardTitles = [
-  { id: 1, title: 'Load previous pdf', icon: RoundPDF },
+  { id: 1, title: 'Load your favorite pdf or create your own', icon: RoundPDF },
   { id: 2, title: 'Make your edits', icon: RoundEDIT },
-  { id: 3, title: 'Send your version to print!', icon: RoundPRINT },
+  { id: 3, title: 'Download your version for print!', icon: RoundPRINT },
 ]
-const WhatWeDo = () => {
+const HowItWorks = () => {
   return (
-    <div>
+    <div className={style.howItWorksTopSection}>
       <h1>How does it work?</h1>
-      <div className={style.stepsCardMainSection}>
+      <div className={style.howItWorksSection}>
         {stepsCardTitles.map((item) => {
           return (
             <>
@@ -48,4 +48,4 @@ const WhatWeDo = () => {
   )
 }
 
-export default WhatWeDo
+export default HowItWorks
