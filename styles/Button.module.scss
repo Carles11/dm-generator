@@ -10,9 +10,24 @@
     border-color: variables.$primary-color;
     border-width: 1px;
     border-radius: 15px 15px 15px 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     p {
       color: variables.$nav-items-color;
       font-weight: bold;
+      font-size: large;
+    }
+  }
+  .bodyButton {
+    background-color: variables.$primary-color;
+    padding: 1rem;
+    margin: 2rem;
+    border-color: variables.$text-white;
+    border-width: 1px;
+    border-radius: 15px 15px 15px 2px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    p {
+      color: variables.$text-white;
       font-size: large;
     }
   }

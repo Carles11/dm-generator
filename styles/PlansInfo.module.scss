@@ -1,14 +1,14 @@
 @use 'variables';
 
-.howItWorksTopSection {
-  background-color: variables.$secondary-light-color;
+.plansInfoTopLevelSection {
+  background-color: white;
   padding: 4rem;
   h1 {
-    color: variables.$nav-items-color;
+    color: variables.$text-color;
   }
 }
 
-.howItWorksSection {
+.plansInfoSection {
   display: flex;
   flex-direction: row;
   justify-content: center;

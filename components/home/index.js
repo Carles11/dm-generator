@@ -4,6 +4,7 @@ import Divider from 'components/divider'
 import Image from 'next/image'
 import styles from 'styles/Home.module.scss'
 import HowItWorks from './howItWorks'
+import PlansInformation from './plansInfo'
 
 const Home = () => {
   return (
@@ -11,7 +12,7 @@ const Home = () => {
       <header className={styles.homeHeader}>
         <div className={styles.homeIntro}>
           <h1>Ready to promote your next move?</h1>
-          <h3>Start right now with it</h3>
+          <h3>Get it done in minutes, not weeks.</h3>
           <Button txt="Sign up for free" />
         </div>
         <div className={styles.homeImage}>
@@ -29,6 +30,9 @@ const Home = () => {
         <HowItWorks />
       </section>
       <Divider />
+      <section className={styles.homeSection}>
+        <PlansInformation />
+      </section>
     </div>
   )
 }
