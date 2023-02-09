@@ -9,6 +9,7 @@ const PlansInfo = () => {
       title: 'Free Plan',
       description: ['For private users or small companies'],
       btnText: 'Sign up now',
+      link: '/pricing',
     },
     {
       id: 2,
@@ -16,7 +17,8 @@ const PlansInfo = () => {
       description: [
         'Create a company account to share between Teams of your company. Collaborate on documents together and at the same time.',
       ],
-      btnText: 'Most valued option',
+      btnText: 'See the details',
+      link: '/pricing',
     },
     {
       id: 3,
@@ -24,7 +26,8 @@ const PlansInfo = () => {
       description: [
         'For big corporations. Create accounts for all your subsidiaries',
       ],
-      btnText: 'Be covered',
+      btnText: 'All covered',
+      link: '/pricing',
     },
   ]
   return (
@@ -39,6 +42,7 @@ const PlansInfo = () => {
                 title={item.title}
                 descriptions={item.description}
                 btnText={item.btnText}
+                link={item.link}
               />
             </>
           )

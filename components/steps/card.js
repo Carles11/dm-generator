@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import styles from 'styles/StepsCard.module.scss'
 
-const StepsCard = ({ title, iconName, descriptions, btnText }) => {
+const StepsCard = ({ title, iconName, descriptions, btnText, link }) => {
   console.log({ iconName })
   return (
     <div className={styles.stepsCardContainer}>
@@ -24,7 +24,7 @@ const StepsCard = ({ title, iconName, descriptions, btnText }) => {
         />
       )}
 
-      {btnText && <Button card txt={btnText} />}
+      {btnText && <Button card txt={btnText} link={link} />}
     </div>
   )
 }

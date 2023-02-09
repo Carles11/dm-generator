@@ -1,11 +1,15 @@
+import Link from 'next/link'
 import styles from 'styles/Button.module.scss'
 
-const Button = ({ txt, card }) => {
+const Button = ({ txt, card, link }) => {
   return (
     <div className={styles.mainButtonContainer}>
-      <button className={!card ? styles.mainButton : styles.bodyButton}>
+      <Link
+        href={link}
+        className={!card ? styles.mainButton : styles.bodyButton}
+      >
         <p>{txt}</p>
-      </button>
+      </Link>
     </div>
   )
 }

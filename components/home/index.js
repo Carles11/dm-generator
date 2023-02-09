@@ -13,7 +13,7 @@ const Home = () => {
         <div className={styles.homeIntro}>
           <h1>Ready to promote your next move?</h1>
           <h3>Get it done in minutes, not weeks.</h3>
-          <Button txt="Sign up for free" />
+          <Button txt="Sign up for free" link="/register" />
         </div>
         <div className={styles.homeImage}>
           <Image

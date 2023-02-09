@@ -14,9 +14,19 @@ import StepsCard from 'components/steps/card'
 import style from 'styles/HowItWorks.module.scss'
 
 const stepsCardTitles = [
-  { id: 1, title: 'Load your favorite pdf or create your own', icon: RoundPDF },
-  { id: 2, title: 'Make your edits', icon: RoundEDIT },
-  { id: 3, title: 'Download your print-ready file!', icon: RoundPRINT },
+  {
+    id: 1,
+    title: 'Load your favorite pdf or create your own',
+    icon: RoundPDF,
+    link: '',
+  },
+  { id: 2, title: 'Make your edits', icon: RoundEDIT, link: '' },
+  {
+    id: 3,
+    title: 'Download your print-ready file!',
+    icon: RoundPRINT,
+    link: '',
+  },
 ]
 const HowItWorks = () => {
   return (
@@ -30,6 +40,7 @@ const HowItWorks = () => {
                 key={item.id}
                 title={item.title}
                 iconName={item.icon}
+                link={item.link}
               />
               {item.id !== 3 && (
                 <Image
