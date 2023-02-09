@@ -5,7 +5,6 @@ import Image from 'next/image'
 import styles from 'styles/StepsCard.module.scss'
 
 const StepsCard = ({ title, iconName, descriptions, btnText, link }) => {
-  console.log({ iconName })
   return (
     <div className={styles.stepsCardContainer}>
       <h3>{title}</h3>
