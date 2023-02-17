@@ -1,0 +1,35 @@
+@use 'variables';
+
+.aboutUsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &_sectionOne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: variables.$card-bg-color;
+    min-height: 50vh;
+    h1 {
+      min-width: 33%;
+    }
+    p {
+      margin: 0rem 2rem;
+    }
+  }
+  &_sectionTwo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 50vh;
+    h1 {
+      min-width: 33%;
+    }
+    p {
+      margin: 0rem 2rem;
+    }
+  }
+}
