@@ -7,7 +7,7 @@ const nextConfig = {
   // !! WARN !!
   // ignoreBuildErrors: false,
   experimental: {
-    appDir: true, // https://nextjs.org/docs/messages/experimental-app-dir-config
+    appDir: false, // https://nextjs.org/docs/messages/experimental-app-dir-config
   },
 }
 

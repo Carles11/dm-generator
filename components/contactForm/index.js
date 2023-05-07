@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from 'styles/ContactForm.module.scss'
+import 'styles/ContactForm.module.scss'
 
 const ContactForm = () => {
   const [sendEffect, setSendEffect] = useState(false)
@@ -40,13 +41,10 @@ const ContactForm = () => {
       <small>Enter message (optional) and click button "Send"</small>
       <div className={`${styles.wrapper} ${styles.centered}`}>
         <article className={styles.letter}>
-          <div className="side">
-            <h1>Contact us</h1>
+          <div className={styles.side}>
             <p>
               <textarea placeholder="Your message"></textarea>
             </p>
-          </div>
-          <div className="side">
             <p>
               <input type="text" placeholder="Your name" />
             </p>
