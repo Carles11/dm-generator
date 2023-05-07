@@ -17,6 +17,7 @@
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
+    "change-case": "^4.1.2",
     "eslint": "8.33.0",
     "next": "^13.2.4",
     "pspdfkit": "^2023.1.0",
