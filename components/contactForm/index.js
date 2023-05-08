@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useState } from 'react'
 import styles from 'styles/ContactForm.module.scss'
 import 'styles/ContactForm.module.scss'
@@ -38,7 +40,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <small>Enter message (optional) and click button "Send"</small>
+      <small>Enter message (optional) and click button &quot;Send&quot;</small>
       <div className={`${styles.wrapper} ${styles.centered}`}>
         <article className={styles.letter}>
           <div className={styles.side}>

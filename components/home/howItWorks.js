@@ -31,7 +31,7 @@ const HowItWorks = () => {
       <div className={style.howItWorksSection}>
         {stepsCardTitles.map((item) => {
           return (
-            <div className={style.howItWorksInnerSection}>
+            <div key={item.id} className={style.howItWorksInnerSection}>
               <StepsCard
                 key={item.id}
                 title={item.title}

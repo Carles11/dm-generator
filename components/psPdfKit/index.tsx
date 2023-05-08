@@ -1,35 +1,30 @@
-import { useEffect, useRef } from "react";
+// @ts-nocheck
+
+import { useEffect, useRef } from 'react'
 
 export default function App() {
-  const containerRef = useRef(null);
+  const containerRef = useRef(null)
 
   useEffect(() => {
-    const container = containerRef.current;
-    let PSPDFKit;
+    const container = containerRef.current
+    let PSPDFKit
+    ;(async function () {
+      PSPDFKit = await import('pspdfkit')
 
-    (async function () {
-      PSPDFKit = await import("pspdfkit");
-      
       if (PSPDFKit) {
-        PSPDFKit.unload(container);
+        PSPDFKit.unload(container)
       }
-   
 
       await PSPDFKit.load({
         container,
-        document: "/document.pdf",
+        document: '/document.pdf',
         baseUrl: `${window.location.protocol}//${window.location.host}/`,
         enableRichText: () => true,
-        
-      });
+      })
+    })()
 
+    return () => PSPDFKit && PSPDFKit.unload(container)
+  }, [])
 
-    })();
-
-    return () => PSPDFKit && PSPDFKit.unload(container);
-  }, []);
-
-  return (
-      <div ref={containerRef} style={{ height: "100vh" }} />
-  );
+  return <div ref={containerRef} style={{ height: '100vh' }} />
 }
